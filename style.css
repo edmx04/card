@@ -1,0 +1,166 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 62.5%;
+   font-family: "Montserrat", sans-serif;
+}
+
+body {
+   background-color: #f2ebe3;
+}
+
+main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+
+.card {
+   width: 580px;
+   display: flex;
+}
+
+.card img {
+   width: 50%;
+   border-top-left-radius: 1rem;
+   border-bottom-left-radius: 1rem;
+}
+
+.card .mobile {
+   display: none;
+}
+
+.texto {
+   display: flex;
+   flex-direction: column;
+   background-color: #fff;
+   width: 50%;
+   padding: 3rem;
+   border-top-right-radius: 1rem;
+   border-bottom-right-radius: 1rem;
+}
+
+.texto h1 {
+   color: #1c232b;
+   font-size: 2.8rem;
+   margin: 2.5rem 0;
+   font-family: "Fraunces", serif;
+   text-transform: capitalize;
+   line-height: 1.1;
+}
+
+.texto h2 {
+   font-size: 1.2rem;
+   text-transform: uppercase;
+   color: #6c7289;
+   letter-spacing: 3px;
+   font-weight: 500;
+}
+
+.texto p {
+   color: #6c7289;
+   font-size: 1.4rem;
+   line-height: 1.4;
+   margin-bottom: 2rem;
+}
+
+.texto .precio {
+   font-family: "Fraunces", serif;
+   font-size: 2.5rem;
+   color: #145825;
+   display: flex;
+   align-items: center;
+}
+
+.texto .precio del {
+   font-family: "Montserrat", sans-serif;
+   color: #6c7289;
+   font-size: 1.1rem;
+   padding-left: 2.5rem;
+}
+
+.texto .btn {
+   background-color: #145825;
+   text-decoration: none;
+   text-align: center;
+   display: inline-block;
+   padding: 1.2rem 0;
+   color: #fff;
+   font-size: 1.1rem;
+   border-radius: 7px;
+   margin-top: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.texto .btn:hover {
+   background-color: #0d3a18;
+}
+
+@media (max-width: 580px) {
+   body {
+      background-color: #f2ebe3;
+   }
+
+   main {
+      height: 100vh;
+   }
+
+   .card {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+   }
+
+   .card .mobile {
+      display: inline-block;
+      width: 90%;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 1rem;
+   }
+
+   .card img {
+      display: none;
+   }
+
+   .texto {
+      border-bottom-right-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+      border-top-right-radius: 0;
+      width: 90%;
+      padding: 4rem;
+   }
+
+   .texto h1 {
+      font-size: 4rem;
+   }
+
+   .texto h2 {
+      font-size: 1.4rem;
+   }
+
+   .texto p {
+      line-height: 2;
+      font-size: 1.6rem;
+   }
+
+   .texto .precio {
+      font-size: 3.2rem;
+   }
+
+   .texto .precio del {
+      font-size: 1.4rem;
+   }
+
+   .texto .btn {
+      font-size: 1.4rem;
+      padding: 2rem 0;
+   }
+}
